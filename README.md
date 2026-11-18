@@ -1,6 +1,6 @@
 # Grafo no dirigido con matriz de adyacencia (DFS y BFS)
 
-Proyecto académico de estructuras de datos en Python. Implementa un **grafo no dirigido** con **matriz de adyacencia** y los recorridos **DFS** y **BFS**.
+Proyecto académico de estructuras de datos en Java. Implementa un **grafo no dirigido** con **matriz de adyacencia** y los recorridos **DFS** y **BFS**.
 
 ## Grafo no dirigido
 Las aristas no tienen dirección: si A está conectado con B, también B lo está con A.
@@ -19,15 +19,16 @@ Visita primero todos los vecinos del vértice actual, luego los siguientes nivel
 - BFS: cola, explora por niveles (de cerca a lejos); encuentra el camino con menos aristas.
 
 ## Archivos
-- `grafo.py`: clase `GrafoNoDirigido` (matriz, DFS, BFS)
-- `main.py`: ejemplo de ejecución
-- `test_grafo.py`: pruebas unitarias
+- `src/GrafoNoDirigido.java`: clase del grafo (matriz, DFS, BFS)
+- `src/Main.java`: ejemplo de ejecución
+- `src/Pruebas.java`: pruebas (creación, matriz, DFS, BFS)
 
 ## Ejecución
-Requiere Python 3.
+Requiere JDK (Java 11 o superior). Desde la carpeta del proyecto:
 ```
-python main.py
-python -m unittest -v test_grafo
+javac -d out src/*.java
+java -cp out Main
+java -cp out Pruebas
 ```
 
 ## Ejemplo de ejecución
